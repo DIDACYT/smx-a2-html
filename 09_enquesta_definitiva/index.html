@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció al Curs Online de informatica</title>
+    <meta name="Inscripció al Curs Online de informatica" content="Inscripció al Curs Online de informatica">
+</head>
+<body>
+    <header>
+        <h1>Enquesta Definitiva: Superherois</h1>
+    </header>
+    <hr>
+    <main>
+    <fieldset>
+        <legend>Dades del superheroi</legend>
+        <br>
+            <fieldset>
+            <legend>Informacio de contacte</legend>
+            <form action="./form/procesadordades.php" method="POST">
+                <label for="Nom del superheroi">Nom del superheroi:</label>
+                <input required minlength="6" maxlength="30" type="text" id="Nom complet" name="Nom del superheroi">
+                <br><br>
+                <label for="representant del superheroi">Correu del superheroi:</label>
+                <input required minlength="15" type="email" id="representant del superheroi" name="representant del superheroi">
+                <br><br>
+                <label for="Contrasenya">Contrasenya de la base secreta:</label>
+                <input required minlength="10" type="password" id="Contrasenya" name="Contrasenya">
+                <br><br>
+                <label for="Pagina superheroi">Pagina del superheroi</label>
+                <input required type="url" id="Pagina superheroi" name="Pagina superheroi">
+                <br><br>
+                <label for="Telefoncontacte">Telèfon d'emergències per trucades</label>
+                <input required pattern="[6-7]{1}[0-9]{8}" type="tel" id="Telefoncontacte" name="Telefoncontacte">
+                <br><br>
+                <label for="Hora reunions">Hora concreta disponible per reunions:</label>
+                <input required type="time" id="Hora reunions" name="Hora reunions">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Informacio de batalla</legend>
+                <label for="numero">Numero de batalles:</label>
+                <input required minlength="6" type="number" id="numero" name="numero">
+                <br><br>
+                <label for="Nivell">Nivell de poder de l'1 al 100:</label>
+                <input required type="range" id="Nivell" name="Nivell de poder">
+                <br><br>
+                <label for="Primera aparicio">Data de la primera aparició del superheroi:</label>
+                <input required type="date" id="Primera aparicio" name="Primera aparicio">
+                <br><br>
+                <label for="vestit">Color principal de la vestimenta del superheroi:</label>
+                <input required type="color" id="vestit" name="vestit">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias</legend>
+                <p>Tipo de carreg</p>
+                <input required type="radio" name="heroi" id="heroi">
+                <label for="heroi">Heroi</label>
+                <input required type="radio" name="ajudant" id="ajudant">
+                <label for="ajudant">Ajudant</label>
+                <input required type="radio" name="malvat" id="malvat">
+                <label for="malvat">Malvat</label>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de superpoder</legend>
+                <input required type="checkbox" name="volar" id="volar">
+                <label for="volar">volar</label>
+                <input required type="checkbox" name="invisibilitat" id="invisibilitat">
+                <label for="invisibilitat">invisibilitat</label>
+                <input required type="checkbox" name="superforça" id="superforça">
+                <label for="superforça">Malsuperforçavat</label>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Tria el teu univers:</legend>
+                <label for="univers"></label>
+                <select required name="Univers provenent" id="Univers">
+                    <option value="Marvel">Marvel</option>
+                    <option value="DC">DC</option>
+                    <option value="Manga">Manga</option>
+                </select>
+            </fieldset>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Enquesta</legend> <!--10 preguntas contestando con radio-->
+                <br>
+                <p>Quin és el teu enemic preferit?</p>
+                <input required type="radio" name="enemic1" id="enemic1">
+                <label for="enemic1">enemic1</label>
+                <br><br>
+                <input required type="radio" name="enemic2" id="enemic2">
+                <label for="enemic2">enemic2</label>
+                <br><br>
+                <input required type="radio" name="enemic3" id="enemic3">
+                <label for="enemic3">enemic3</label>
+                <br><br>
+                <p>Quin seria el teu gadget ideal?</p>
+                <input required type="radio" name="gadget1" id="gadget1">
+                <label for="gadget1">gadget1</label>
+                <br><br>
+                <input required type="radio" name="gadget2" id="gadget2">
+                <label for="gadget2">gadget2</label>
+                <br><br>
+                <input required type="radio" name="gadget3" id="gadget3">
+                <label for="gadget3">gadget3</label>
+                <br><br>
+                <p>Amb quin superheroi mai faries equip?</p>
+                <input required type="radio" name="superheroi1" id="superheroi1">
+                <label for="superheroi1">superheroi1</label>
+                <br><br>
+                <input required type="radio" name="superheroi2" id="superheroi2">
+                <label for="superheroi2">superheroi2</label>
+                <br><br>
+                <input required type="radio" name="superheroi3" id="superheroi3">
+                <label for="superheroi3">superheroi3</label>
+                <br><br>
+                <p>Que tipo de formacio uses al lluitar?</p>
+                <input required type="radio" name="Formacio1" id="Formacio1">
+                <label for="Formacio1">Formacio1</label>
+                <br><br>
+                <input required type="radio" name="Formacio2" id="Formacio2">
+                <label for="Formacio2">Formacio2</label>
+                <br><br>
+                <input required type="radio" name="Formacio3" id="Formacio3">
+                <label for="Formacio3">Formacio3</label>
+                <br><br>
+                <p>T'agrada lluitar amb un grup d'enemics o sol?</p>
+                <input required type="radio" name="sol" id="sol">
+                <label for="sol">sol</label>
+                <br><br>
+                <input required type="radio" name="grup" id="grup">
+                <label for="grup">grup</label>
+                <br><br>
+                <p>Quan sols menjar al dia?</p>
+                <input required type="radio" name="1vegada" id="1vegada">
+                <label for="1vegada">1 vegada al dia</label>
+                <br><br>
+                <input required type="radio" name="2+vegades" id="2+vegades">
+                <label for="2+vegades">2 o mes vegades al dia</label>
+                <br><br>
+                <p>Amb qui superheroi t'agradaria lluitar amb?</p>
+                <input required type="radio" name="superheroi1" id="superheroi1">
+                <label for="superheroi1">superheroi1</label>
+                <br><br>
+                <input required type="radio" name="superheroi2" id="superheroi2">
+                <label for="superheroi2">superheroi2</label>
+                <br><br>
+                <input required type="radio" name="superheroi3" id="superheroi3">
+                <label for="superheroi3">superheroi3</label>
+                <br><br>
+                <p>A cual enemic hi tens por?</p>
+                <input required type="radio" name="enemic1" id="enemic1">
+                <label for="enemic1">enemic1</label>
+                <br><br>
+                <input required type="radio" name="enemic2" id="enemic2">
+                <label for="enemic2">enemic2</label>
+                <br><br>
+                <input required type="radio" name="enemic3" id="enemic3">
+                <label for="enemic3">enemic3</label>
+                <br><br>
+                <p>Amb cual gadget s'etadona millor lluitar?</p>
+                <input required type="radio" name="gadget1" id="gadget1">
+                <label for="gadget1">gadget1</label>
+                <br><br>
+                <input required type="radio" name="gadget2" id="gadget2">
+                <label for="gadget2">gadget2</label>
+                <br><br>
+                <input required type="radio" name="gadget3" id="gadget3">
+                <label for="gadget3">gadget3</label>
+                <br><br>
+                <p>Amb cual superheroi t'agradaria fer un "sparring"?</p>
+                <input required type="radio" name="superheroi1" id="superheroi1">
+                <label for="superheroi1">superheroi1</label>
+                <br><br>
+                <input required type="radio" name="superheroi2" id="superheroi2">
+                <label for="superheroi2">superheroi2</label>
+                <br><br>
+                <input required type="radio" name="superheroi3" id="superheroi3">
+                <label for="superheroi3">superheroi3</label>
+                <br><br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Enviar formulari</legend>
+                <label for="Enviar">Enviar?</label>
+                <input type="submit" id="Enviar" value="Envia">
+            </fieldset>
+            </form>
+    </main>
+    <hr>
+
+    <footer>
+        <em>Superheroe superguay</em> &copy; <address>base secreta super secreta</address>
+    </footer>
+</body>
+</html>

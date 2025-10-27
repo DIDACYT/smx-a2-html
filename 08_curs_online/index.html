@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció al Curs Online de informatica</title>
+    <meta name="Inscripció al Curs Online de informatica" content="Inscripció al Curs Online de informatica">
+</head>
+<body>
+    <header>
+        <h1>Inscripció al Curs Online de informatica</h1>
+        <h2>Formulari</h2>
+    </header>
+    <main>
+        <form action="./form/procesadordades.php" method="POST" id="DadesPersonals">
+            <fieldset>
+                <legend>Dades Personals</legend>
+            <label for="Nom complet">Nom complet:</label>
+            <input required minlength="10" maxlength="50" type="text" id="Nom complet" placeholder="Nom complet" name="Nom complet">
+            <br><br>
+            <label for="Correu">Correu:</label>
+            <input required type="email" id="Correu" placeholder="Correu" name="Correu">
+            <br><br>
+            <label for="Telefon">Telefon:</label>
+            <input required  type="tel" id="Telefon" pattern="[6-7]{1}[0-9]{8}" placeholder="Telefon" name="Telefon">
+            <br><br>
+            <label for="Naixement">Data de naixement:</label>
+            <input required type="date" name="Naixement" id="Naixement">
+            </fieldset>
+            <fieldset>
+                <legend>Tipus de Curs i Experiència prèvia</legend>
+                <label for="Categoria cursos">Selecciona multiples categorias</label>
+                <select multiple name="Categoria cursos" id="Categoria cursos">
+                    <option>Programació bàsica</option>
+                    <option>Administració de Sistemes</option>
+                    <option>Desenvolupament de Videojocs</option>
+                    <option>Desenvolupament Web</option>
+                </select>
+                <br><br>
+                <input required type="radio" name="Novell" id="Novell">
+                <label for="Novell">Novell</label>
+                <input required type="radio" name="Intermediari" id="Intermediari">
+                <label for="Intermediari">Intermediari</label>
+                <input required type="radio" name="Avançat" id="Avançat">
+                <label for="Avançat">Avançat</label>
+            </fieldset>
+            <fieldset>
+                <legend>Interessos i motivació del curs</legend>
+                <br>
+                <input type="checkbox" name="Projectes" id="Projectes">
+                <label for="Projectes">Projectes</label>
+                <input type="checkbox" name="Tutories" id="Tutories">
+                <label for="Tutories">Tutories</label>
+                <input type="checkbox" name="Certificat" id="Certificat">
+                <label for="Certificat">Certificat</label>
+                <br><br>
+                <textarea name="Interessos" id="Interessos" required minlength="100" maxlength="500" 
+                placeholder="Breu text explicant per què vols realitzar el curs o els cursos escollits"></textarea>
+                <br><br>
+                <label for="Llista">Posicions de treball demanades</label>
+                <input list="Posicions" id="Posicions2" name="Posicions de treball">
+                    <datalist id="Posicions">
+                        <option value="Ciberseguretat"></option>
+                        <option value="DevOps"></option>
+                        <option value="Frontend"></option>
+                        <option value="Backend"></option>
+                    </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Fitxer i acceptació de condicions</legend>
+                <br>
+                <label for="file">Document PDF</label>
+                <input type="file" id="file" accept="document/pdf">
+                <br> <br>
+                <label for="politica">Acceptes les condicions?</label>
+                <input required type="checkbox" id="politica" name="politica privacitat">
+            </fieldset>
+            <fieldset>
+                <legend>Botó de submit</legend>
+                <label for="condicion">Enviar?</label>
+                <input type="submit" id="condicion" value="Envia">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <em>Didac Molina garcia oficce</em> &copy; <address>Granollers</address> 6810233599 <a href="./html/Support.html">Support</a>
+    </footer>
+</body>
+</html>
